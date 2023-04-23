@@ -1,0 +1,48 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+@use '../base/ciclos' as c;
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    @include m.tablet {
+        justify-content: end;
+    }
+    &__icono {
+        border: 1px solid var(--negro);
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &[href*="facebook"]::before {
+            background-image: url(../images/facebook-f.svg);
+        }
+        &[href*="twitter"]::before {
+            background-image: url(../images/twitter.svg);
+        }
+        &[href*="instagram"]::before {
+            background-image: url(../images/instagram.svg);
+        }
+        &::before {
+            content: '';
+            width: 2rem;
+            height: 2rem;
+            display: block;
+            background-repeat: no-repeat;
+        }
+    }
+    &__span {
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        display: block;
+    }
+
+
+
+}

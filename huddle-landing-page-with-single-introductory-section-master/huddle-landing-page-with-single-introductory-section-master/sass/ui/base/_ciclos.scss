@@ -1,0 +1,19 @@
+%ciclo1 {
+    @for $i from 1 through 3 {
+        @if $i == 1 {
+            &[href*="facebook"]::before {
+                background-image: url(../images/facebook-f.svg);
+            }
+        }
+        @else if $i == 2 {
+            &[href*="twitter"]::before {
+                background-image: url(../images/twwiter.svg);
+            }
+        }
+        @else {
+            &[href*="instagram"]::before {
+                background-image: url(../images/instagram.svg);
+            }
+        }
+    }
+}
