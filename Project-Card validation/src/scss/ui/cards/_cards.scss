@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.cards {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5rem;
+
+    @include m.desktop {
+        display: block;
+        flex-direction: none;
+        margin-bottom: 0;
+    }
+}

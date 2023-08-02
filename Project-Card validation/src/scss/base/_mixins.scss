@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+@mixin telefono {
+    @media (min-width: v.$mobile) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+@mixin boton {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+    color: v.$lightViolet;
+    background-color: lighten(v.$darkViolet, 60%);
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

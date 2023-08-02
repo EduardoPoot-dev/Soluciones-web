@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.thanks {
+    width: 75%;
+    display: none;
+
+    &__contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__advice {
+        font-size: 3.2rem;
+        color: v.$darkViolet;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        margin: 2rem 0;
+
+        @include m.desktop {
+            font-size: 2.8rem;
+        }
+    }
+    &__description {
+        font-size: 1.8rem;
+        margin: 0 0 4rem 0;
+        color: v.$violet;
+        text-align: center;
+
+        @include m.desktop {
+            font-size: 1.5rem; 
+        }
+    }
+    &__boton {
+        @include m.boton;
+        background-color: v.$darkViolet;
+        font-size: 1.8rem;
+        @include m.desktop {
+            font-size: 1.5rem;
+        }
+    }
+    &__active {
+        display: block;
+    }
+}
+

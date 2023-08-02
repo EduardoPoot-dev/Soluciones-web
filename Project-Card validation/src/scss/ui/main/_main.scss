@@ -1,0 +1,11 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+main  {
+    
+    @include m.desktop {
+        @include m.grid(2, 4rem);
+    }
+
+    
+}

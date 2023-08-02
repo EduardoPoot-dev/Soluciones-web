@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+body {
+    background-image: linear-gradient(to bottom, transparent 33%, v.$white 33%), url(../img/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 5rem;
+
+    @include m.desktop {
+        background-image: linear-gradient(to right, transparent 33%, v.$white 33%), url(../img/bg-main-desktop.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

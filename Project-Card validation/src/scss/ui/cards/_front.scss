@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.front {
+    margin-top: -7.5rem;
+    z-index: 1;
+    &__contenedor {
+        width: 30rem;
+        height: 17.5rem;
+        background-image: url(../img/bg-card-front.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        letter-spacing: 0.1rem;
+        color: v.$white;
+
+        @include m.desktop {
+            width: 35rem;
+            height: 20rem;
+        }
+    }
+
+    &__img {
+        width: 4rem;
+
+        @include m.desktop {
+            width: 7rem;
+        }
+    }
+
+    &__card-number {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        letter-spacing: 0.2rem;
+
+        @include m.desktop {
+            font-size: 2.2rem;
+        }
+    }
+
+    &__data {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 400;
+
+        @include m.desktop {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__name,
+    &__date {
+        margin: 0;
+    }
+
+
+
+
+
+}

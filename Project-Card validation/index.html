@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="build/css/app.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+  <main class="contenedor">
+    <div class="cards">
+      
+      <div class="front">
+        <div class="front__contenedor">
+          <img src="build/img/card-logo.svg" class="front__img" alt="card-logo">
+          
+          <div class="front__info">
+            <p class="front__card-number" id="number-img">0000 0000 0000 0000</p>
+            <div class="front__data">
+              <p class="front__name" id="name-img">Jane Appleseed</p>
+              <p class="front__date" id="expires-img">
+                <span id="mm-img">00</span>/<span id="yy-img">00</span>
+              </p>
+            </div>
+          </div>
+          
+
+        </div>
+      </div><!-- end-front -->
+  
+      <div class="behind">
+        <div class="behind__contenedor">
+          <P class="behind__cvc" id="cvc-img">000</P>
+        </div>
+      </div><!-- end-back -->
+      
+    </div>
+  
+    </div>
+  
+    <div class="form">
+
+      <form class="form__contenedor" id="form">
+  
+        <div class="field">
+          <label for="name" class="field__label">Cardholder Name</label>
+          <input id="name" class="field__input" type="text" placeholder="e.g. Jane Appleseed">
+        </div><!--camp end-->
+    
+        <div class="field">
+          <label for="cardNumber" class="field__label">Card Number</label>
+          <input id="cardNumber" class="field__input" type="text" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+        </div><!--camp end-->
+    
+        <div class="field__grid">
+          <div class="field" >
+            <label for="expires-month expires-year" class="field__label">Exp. Date (MM/YY)</label>
+            <input id="month" class="field__input field__input--inline" type="text" maxlength="2" placeholder="MM">
+            <input id="year" class="field__input field__input--inline" type="text" maxlength="2" placeholder="YY">
+          </div><!--camp end-->
+      
+          <div class="field">
+            <label for="cvc" class="field__label">CVC</label>
+            <input id="cvc" class="field__input" type="text" minlength="3" maxlength="3" placeholder="e.g. 123">
+          </div>
+        </div><!--camp end-->
+    
+        <input id="submit" class="field__submit" type="submit" value="Confirm" disabled>
+    
+      </form>
+
+      <div class="thanks" id="thanks">
+
+        <div class="thanks__contenedor">
+          <img src="build/img/icon-complete.svg" alt="icon-complete">
+          <p class="thanks__advice">Thank you!</p>
+          <p class="thanks__description">We've added your card details</p>
+          <a class="thanks__boton" id="thanks-btn" href="#">Continue</a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm -->
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">J Eduardo Poot</a>.
+  </div> -->
+</body>
+<script src="build/js/app.js"></script>
+</html>
