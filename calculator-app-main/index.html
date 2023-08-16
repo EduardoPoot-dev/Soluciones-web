@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<body id="body">
+  <main class="calculadora">
+    <div id="header" class="calculadora__header">
+      <div class="calculadora__nombre">
+        <p class="calculadora__nombre-texto">calc</p>
+      </div><!--fin .calculadora__nombre-->
+  
+      <div class="calculadora__temas">
+        <div class="calculadora__temas-num">
+          <div class="calculadora__temas--numeros">
+            <p class="calculadora__temas--numero">1</p>
+            <p class="calculadora__temas--numero">2</p>
+            <p class="calculadora__temas--numero">3</p>
+          </div>
+        </div><!--.calculadora__contenedor fin-->
+
+        <div class="calculadora__temas-activador">
+          <div class="calculadora__temas-titulo">
+            <p class="calculadora__temas-p">theme</p>
+          </div>
+
+          <div class="calculadora__temas-widget" id="toggle">
+            <div class="calculadora__temas-circulo" id="tema"></div>
+          </div>
+        </div><!--.calculadora__activador fin-->
+      </div><!--.calculadora__temas fin-->
+    </div><!--.calculadora__header fin-->
+
+    <div id="pantalla" class="pantalla">
+      <p class="pantalla__numeros" id="pantalla-numero"></p>
+    </div><!--.pantalla fin-->
+
+    <form class="teclado" id="calculadora">
+      <div class="boton">
+        <input id="7" class="boton__tecla numero" type="button" value="7">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="8" class="boton__tecla numero" type="button" value="8">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="9" class="boton__tecla numero" type="button" value="9">
+      </div><!--fin boton-->
+      <div class="del">
+        <input id="del" class="boton__tecla boton__tecla--eliminar" type="button" value="del">
+      </div><!--fin boton-->
+
+      <div class="boton">
+        <input id="4" class="boton__tecla numero" type="button" value="4">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="5" class="boton__tecla numero" type="button" value="5">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="6" class="boton__tecla numero" type="button" value="6">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="mas" class="boton__tecla operador" type="button" value="+">
+      </div><!--fin boton-->
+
+      <div class="boton">
+        <input id="1" class="boton__tecla numero" type="button" value="1">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="2" class="boton__tecla numero" type="button" value="2">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="3" class="boton__tecla numero" type="button" value="3">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="menos" class="boton__tecla" type="button" value="-">
+      </div><!--fin boton-->
+
+      <div class="boton">
+        <input id="punto" class="boton__tecla" type="button" value=".">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="0" class="boton__tecla numero" type="button" value="0">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="entre" class="boton__tecla operador" type="button" value="/">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="por" class="boton__tecla operador" type="button" value="*">
+      </div><!--fin boton-->
+
+      <div class="boton">
+        <input id="reset" class="boton__tecla boton__tecla--eliminar" type="reset" value="reset">
+      </div><!--fin boton-->
+      <div class="boton">
+        <input id="igual" class="boton__tecla boton__tecla--igual" type="button" value="=">
+      </div><!--fin boton-->
+    </form><!--.teclado fin-->
+
+  </main>
+  
+  <script src="js/app.js"></script>
+
+  <!--CODE BY EDUARDO POOT :)-->
+</body>
+</html>
