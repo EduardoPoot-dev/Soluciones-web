@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+  <nav class="nav container">
+    <img src="images/logo.svg" alt="logo">
+
+    <div class="nav__hamburger"></div>
+
+    <div class="nav__overlay">
+
+      <ul class="nav__menu">
+        
+        <li class="nav__item">
+          <span class="nav__parent">Features
+            <img src="images/icon-arrow-down.svg" alt="arrow" class="nav__arrow">
+
+          </span>
+
+          <ul class="nav__inner">
+
+            <li class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <img src="images/icon-todo.svg" alt="todo">
+                Todo List
+              </a>
+            </li>
+
+            <li class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <img src="images/icon-calendar.svg" alt="Calendar">
+                Calendar
+              </a>
+            </li>
+
+            <li class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <img src="images/icon-reminders.svg" alt="Reminder">
+                Reminder
+              </a>
+            </li>
+
+            <li class="nav__dropdown">
+              <a href="#" class="nav__link">
+                <img src="images/icon-planning.svg" alt="Planning">
+                Planning
+              </a>
+            </li>
+
+          </ul>
+
+        </li><!--feautures end-->
+
+        <li  class="nav__item">
+          <span class="nav__parent">Company
+            <img src="images/icon-arrow-down.svg" alt="arrow" class="nav__arrow">
+          </span>
+
+          <ul class="nav__inner">
+
+            <li class="nav__dropdown">
+              <a href="#" class="nav__link">History</a>
+            </li>
+
+            <li class="nav__dropdown">
+              <a href="#" class="nav__link">Our Team</a>
+            </li>
+
+            
+            <li class="nav__dropdown">
+              <a href="#" class="nav__link">Blog</a>
+            </li>
+
+          </ul>
+        </li><!--company ends-->
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Careers</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">About</a>
+        </li>
+
+        <li class="nav__login">
+          <a href="#" class="nav__sign">Login</a>
+        </li>
+
+        <li class="nav__login nav__login--border">
+          <a href="#" class="nav__sign">Register</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav> <!--nav ends-->
+
+  <main class="main container">
+    <div class="information">
+      <h2 class="information__slogan">Make <span class="information__slogan--span">remote work</span></h2>
+
+      <p class="information__text">  Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      
+      <a href="#" class="information__more">Learn more</a>
+
+      <div class="information__emprises">
+        <img src="images/client-databiz.svg" alt="databiz" class="information__logos">
+        <img src="images/client-audiophile.svg" alt="audiophile" class="information__logos">
+        <img src="images/client-meet.svg" alt="meet" class="information__logos">
+        <img src="images/client-maker.svg" alt="maker" class="information__logos">
+      </div>
+
+    </div>
+
+    <picture class="main__picture">
+      <source srcset="images/image-hero-desktop.png" class="main__img" media="(min-width: 768px)">
+
+      <img src="images/image-hero-mobile.png" alt="hero" class="main__img">
+
+    </picture>
+
+
+  </main>
+  
+  <script src="js/app.js"></script>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <!-- de aqui saque la tecnica de como hacer el menu:
+    https://www.youtube.com/watch?v=PRywwDEq8qU
+  -->
+</body>
+</html>
