@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <main class="main contenedor">
+    <h1 class="main__titulo">spli<span class="span">tter</span></h1>
+
+    <form class="cotizador" id="formulario">
+
+      <div class="cotizador__inputs">
+
+        <div class="cotizador__campo">
+          <label for="total" class="cotizador__label">Bill</label>
+          <input type="text" id="total" name="total" placeholder="0" class="cotizador__input">
+          <img src="./images/icon-dollar.svg" alt="icon-dollar" class="cotizador__inputLogo">
+        </div><!--input bill fin-->
+
+        <div class="cotizador__campo">
+          <label for="custom" class="cotizador__label">Select Tip</label>
+          <div class="cotizador__btns">
+            <button type="button" id="cinco" value="0.05" class="cotizador__btn">5%</button>
+            <button type="button" id="diez" value="0.10" class="cotizador__btn">10%</button>
+            <button type="button" id="veinte" value="0.20" class="cotizador__btn">20%</button>
+            <button type="button" id="veinte-cinco" value="0.25" class="cotizador__btn">25%</button>
+            <button type="button" id="cincuenta" value="0.50" class="cotizador__btn">50%</button>
+            <input type="text" id="custom" name="custom" placeholder="Custom" class="cotizador__input cotizador__input--custom">
+          </div>
+        </div><!--input btns fin-->
+
+        <div class="cotizador__campo">
+          <label for="personas" class="cotizador__label">Number Of People</label>
+          <input type="text" id="personas" name="personas" placeholder="0" class="cotizador__input">
+          <img src="./images/icon-person.svg" alt="icon-dollar" class="cotizador__inputLogo">
+        </div><!--input numero de personas fin-->
+
+      </div><!--cotizador inputs fin-->
+
+      <div class="cotizador__resultados">
+
+        <div class="cotizador__resultado">
+          <p class="cotizador__dato">Tip Amount
+            <span class="cotizador__span span">/ person</span>
+          </p>
+          <p class="cotizador__valor" id="propina">$0.00</p>
+        </div><!--resultado fin-->    
+
+        <div class="cotizador__resultado">
+          <p class="cotizador__dato">Total
+            <span class="cotizador__span span">/ person</span>
+          </p>
+          <p class="cotizador__valor" id="total-propina">$0.00</p>
+        </div><!--resultado fin-->       
+
+        <button type="reset" id="reset-btn" class="cotizador__reset">Reset</button><!--reset btn-->
+
+      </div><!--resultados fin-->   
+    </form>
+
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

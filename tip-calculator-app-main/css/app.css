@@ -1,0 +1,241 @@
+:root {
+    --string-cyan: hsl(172, 67%, 45%);
+
+    --dark-very-cyan: hsl(183, 100%, 15%);
+    --dark-gralish-cyan: hsl(186, 14%, 43%);
+    --gralish-cyan: hsl(184, 14%, 56%);
+    --light-gralish-cyan: hsl(185, 41%, 84%);
+    --very-light-gralish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+
+    --font: 'Space Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font);
+    font-weight: 700;
+    height: 100%;
+}
+
+.span {
+    display: block;
+}
+
+button,
+input {
+    font-weight: 700;
+    font-family: var(--font);
+    font-size: 2.2rem;
+}
+
+@media (min-width: 768px) {
+    buttom, input {
+        font-size: 1.8rem;
+    }
+}
+
+.main {
+    background-color: var(--light-gralish-cyan);
+    padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8rem;
+    }
+
+}
+
+.main__titulo {
+    text-align: center;
+    color: var(--dark-very-cyan);
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}
+
+.cotizador {
+    background-color: var(--white);
+    padding: 3rem;
+    margin-top: 3rem;
+    border-radius: 2rem;
+}
+
+@media (min-width: 768px) {
+    .cotizador {
+        min-width: 70rem;
+        width: 60%;
+        margin: 0 auto;
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        box-shadow: 0 0 5px #cdcccc;
+    }
+}
+
+.cotizador__campo {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.cotizador__mensaje {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ff0000;
+    font-size: 1.4rem;
+}
+
+.cotizador__label {
+    display: block;
+    color: var(--dark-gralish-cyan);
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+    .cotizador__label {
+        font-size: 1.4rem;
+    }
+}
+
+.cotizador__input {
+    margin-top: 1rem;
+    background-color: var(--very-light-gralish-cyan);
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    width: 100%;
+    cursor: pointer;
+    text-align: end;
+    color: var(--dark-very-cyan);
+}
+
+.cotizador__input:focus {
+    outline: 2px solid var(--string-cyan);
+}
+
+.cotizador__inputBorder {
+    outline: 2px solid #ff0000;
+}
+
+.cotizador__inputBorder:focus {
+    outline: 2px solid #ff0000;
+}
+ 
+.cotizador__inputLogo {
+    position: absolute;
+    width: 1.2rem;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .cotizador__inputLogo {
+        bottom: 1.5rem;
+    }
+}
+
+.cotizador__btns {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .cotizador__btns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.cotizador__btn {
+    padding: 1rem 0;
+    border: 0;
+    background-color: var(--dark-very-cyan);
+    color: var(--white);
+    border-radius: 1rem;
+    transition-property: background-color color;
+    transition-duration: 0.2s;
+}
+
+.cotizador__btn:hover {
+    background-color: var(--light-gralish-cyan);
+    color: var(--dark-very-cyan);
+}
+
+.cotizador__input--custom {
+    margin-top: 0;
+}
+
+.cotizador__resultados {
+    margin-top: 3rem;
+    background-color: var(--dark-very-cyan);
+    padding: 4rem 2rem 2rem 2rem;
+    border-radius: 2rem;
+}
+
+.cotizador__resultado {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.cotizador__dato {
+    color: var(--white);
+}
+
+.cotizador__span {
+    color: var(--gralish-cyan);
+
+}
+
+.cotizador__valor {
+    color: var(--string-cyan);
+    font-size: 2.6rem;
+}
+
+.cotizador__reset {
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--string-cyan);
+    color: var(--dark-very-cyan);
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.cotizador__reset:hover {
+    background-color: var(--light-gralish-cyan);
+}
+ 
+@media (min-width: 768px) {
+    .cotizador__reset {
+        margin-top: 10rem;
+    }
+}
+
+
+
+
+
