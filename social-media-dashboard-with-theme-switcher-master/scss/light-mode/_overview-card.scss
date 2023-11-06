@@ -1,0 +1,20 @@
+@use '../base/mixins' as m;
+
+.overview {
+    h3.active {
+        color: hsl(230, 17%, 14%);
+    }
+}
+
+.overview-card.active {
+    background-color: hsl(227, 47%, 96%);
+    @include m.cardHover(hsl(228, 55%, 90%));
+
+    .title {
+        color: hsl(228, 34%, 66%);
+    }
+
+    .value {
+        color: hsl(230, 17%, 14%);
+    }
+}

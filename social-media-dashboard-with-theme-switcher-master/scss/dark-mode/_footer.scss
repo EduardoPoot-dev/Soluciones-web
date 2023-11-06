@@ -1,0 +1,18 @@
+@use '../base/mixins' as m;
+
+.footer {
+    transform: translateY(-2rem);
+    padding: 2rem 0;
+    color: hsl(228, 34%, 66%);
+    font-size: 1.2rem;
+    text-align: center;
+
+    @include m.tablet {
+        font-size: 1.4rem;
+    }
+
+    a {
+        color: hsl(228, 34%, 66%);
+        font-weight: 700;
+    }
+}

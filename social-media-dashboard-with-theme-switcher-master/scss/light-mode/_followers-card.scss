@@ -1,0 +1,23 @@
+@use '../base/mixins' as m;
+
+.followers-card.active {
+    background-color: hsl(227, 47%, 96%);
+    cursor: pointer;
+    @include m.cardHover(hsl(228, 55%, 90%));
+
+    .user {
+        span {
+            color: hsl(228, 12%, 44%);
+        }
+    }
+
+    .data {
+        p {
+            color: hsl(230, 17%, 14%);
+
+            span {
+                color: hsl(228, 12%, 44%);
+            }
+        }
+    }
+}

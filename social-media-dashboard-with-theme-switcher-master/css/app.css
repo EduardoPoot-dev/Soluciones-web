@@ -1,0 +1,377 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 120rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: hsl(230, 17%, 14%);
+  transition: background-color 0.3s;
+}
+
+.header {
+  padding: 4rem 0 3rem 0;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  background-color: hsl(232, 19%, 15%);
+  transition: background-color 0.3s;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 4rem 0 12rem 0;
+  }
+}
+@media (min-width: 768px) {
+  .header .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    align-items: center;
+  }
+}
+.header-title {
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 768px) {
+  .header-title {
+    margin-bottom: 0;
+  }
+}
+.header-title h1 {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 100%);
+}
+.header-title p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+  margin-top: 5px;
+}
+
+.toggle {
+  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+  border-top: 1px solid hsl(228, 34%, 66%);
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .toggle {
+    padding: 0;
+    border-top: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.toggle span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+}
+.toggle-btn {
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  position: relative;
+  margin-left: auto;
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+  transition: background-color 0.3s;
+}
+@media (min-width: 768px) {
+  .toggle-btn {
+    margin-left: 0;
+  }
+}
+.toggle-swich {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 2.5px;
+  left: 2px;
+  border-radius: 50%;
+  background-color: hsl(230, 17%, 14%);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.content {
+  transform: translateY(-3rem);
+}
+@media (min-width: 768px) {
+  .content {
+    transform: translateY(-8rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .followers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+}
+.followers-card {
+  padding: 2.8rem 0;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.followers-card:hover {
+  background-color: hsl(228, 24%, 30%);
+}
+@media (min-width: 768px) {
+  .followers-card {
+    margin-bottom: 0;
+  }
+}
+.followers-card::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+}
+
+.facebook::before {
+  background-color: hsl(208, 92%, 53%);
+}
+
+.x::before {
+  background-color: hsl(203, 89%, 53%);
+}
+
+.instagram::before {
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%);
+}
+
+.youtube::before {
+  background-color: hsl(348, 97%, 39%);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.user span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+}
+
+.data p {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.data p span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: hsl(228, 34%, 66%);
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.activity span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.activity .green {
+  color: hsl(163, 72%, 41%);
+}
+.activity .red {
+  color: hsl(356, 69%, 56%);
+}
+
+.overview {
+  margin-top: 2.5rem;
+}
+@media (min-width: 768px) {
+  .overview .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+}
+.overview h3 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2.5rem;
+  font-size: 2.4rem;
+}
+.overview-card {
+  padding: 2.5rem;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.overview-card:hover {
+  background-color: hsl(228, 24%, 30%);
+}
+@media (min-width: 768px) {
+  .overview-card {
+    margin-bottom: 0;
+  }
+}
+.overview-card .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+}
+.overview-card img {
+  margin-left: auto;
+}
+.overview-card .value {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.overview-card .percentage {
+  margin-top: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.overview-card .percentage span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(163, 72%, 41%);
+}
+.overview-card .percentage .red {
+  color: hsl(356, 69%, 56%);
+}
+
+.footer {
+  transform: translateY(-2rem);
+  padding: 2rem 0;
+  color: hsl(228, 34%, 66%);
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1.4rem;
+  }
+}
+.footer a {
+  color: hsl(228, 34%, 66%);
+  font-weight: 700;
+}
+
+body.active {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.header.active {
+  background-color: hsl(225, 100%, 98%);
+}
+.header.active .header-title h1 {
+  color: hsl(230, 17%, 14%);
+}
+.header.active .header-title p {
+  color: hsl(228, 12%, 44%);
+}
+
+.toggle.active {
+  border-top: 1px solid hsl(228, 12%, 44%);
+}
+@media (min-width: 768px) {
+  .toggle.active {
+    border-top: none;
+  }
+}
+.toggle.active span {
+  color: hsl(228, 12%, 44%);
+}
+.toggle.active .toggle-btn {
+  background-image: none;
+  background-color: hsl(230, 22%, 74%);
+}
+.toggle.active .toggle-swich {
+  background-color: hsl(0, 0%, 100%);
+  transform: translateX(2.6rem);
+}
+
+.followers-card.active {
+  background-color: hsl(227, 47%, 96%);
+  cursor: pointer;
+}
+.followers-card.active:hover {
+  background-color: hsl(228, 55%, 90%);
+}
+.followers-card.active .user span {
+  color: hsl(228, 12%, 44%);
+}
+.followers-card.active .data p {
+  color: hsl(230, 17%, 14%);
+}
+.followers-card.active .data p span {
+  color: hsl(228, 12%, 44%);
+}
+
+.overview h3.active {
+  color: hsl(230, 17%, 14%);
+}
+
+.overview-card.active {
+  background-color: hsl(227, 47%, 96%);
+}
+.overview-card.active:hover {
+  background-color: hsl(228, 55%, 90%);
+}
+.overview-card.active .title {
+  color: hsl(228, 34%, 66%);
+}
+.overview-card.active .value {
+  color: hsl(230, 17%, 14%);
+}
+
+.footer.active {
+  color: hsl(228, 12%, 44%);
+}
+.footer.active a {
+  color: hsl(228, 12%, 44%);
+}
+
+/*# sourceMappingURL=app.css.map */
